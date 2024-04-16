@@ -1,0 +1,478 @@
+* {  
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+   background-color: #DBD8CD;
+}
+.caption {
+  font-family: "Work Sans", sans-serif;
+  font-weight: 400;
+  font-size: 0.9rem;
+  line-height: 120%;
+  font-variant: small-caps;
+  color: #212125;
+  text-align: left;
+}
+p {
+  font-family: "Work Sans", sans-serif;
+  font-weight: 400;
+  font-size: 1rem;
+  line-height: 130%;
+  text-align: left;
+}
+h3 {
+  font-family: "Work Sans", sans-serif;
+  font-weight: 400;
+  font-size: 1.2rem;
+  line-height: 120%;
+}
+h2 {
+  font-family: "Work Sans", sans-serif;
+  font-weight: 400;
+  font-size: 2rem;
+  line-height: 120%;
+  padding-bottom: 2rem;
+}
+h1 {
+  font-family: "Work Sans", sans-serif;
+  font-weight: 200;
+  font-size: 4rem;
+  line-height: 120%;
+  padding-bottom: 3rem;
+}
+a {
+  font-family: "Work Sans", sans-serif;
+  font-weight: 400;
+  font-size: 1rem;
+  line-height: 120%;
+  color: #212125;
+  text-decoration: none;
+}
+a:hover {
+  text-decoration: underline;
+}
+.strong {
+  font-weight: 600;
+}
+.icon {
+  width: 24px;
+  height: 24px;
+}
+ul {
+  list-style: none;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+li {
+  padding: 20px;
+}
+hr {
+  width: 100%;
+  border: 1px solid #2121256b;
+  margin: 50px 0px 50px 0px;
+}
+header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 12px 100px 12px 100px;
+  background-color: #DBD8CD;
+  position: fixed;
+  width: 100%;
+  z-index: 1;
+}
+nav {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.logo {
+  display: flex ;
+  height: 24px;
+  align-items: center;
+}
+main {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  padding: 100px;
+  background-color: #DBD8CD;
+}
+
+/* Sección Portada en Index */
+.portada {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  height: 600px;
+  margin-bottom: 100px;
+}
+.portada img {
+  width: 100px;
+  height: 100px;
+}
+.portada p {
+  width: 100%;
+  position: absolute;
+  top: 50%;
+  left: 52%;
+  background-color: #DBD8CD;
+  padding: 8px;
+  border-radius: 4px;
+}
+.title {
+  padding: 100px 0px 100px 0px;
+}
+
+/* Sección Formulario */
+.form {
+  display: flex;
+  flex-direction: row;
+  justify-items: space-between;
+}
+.form p {
+  width: 50%;
+}
+fieldset {
+  display: inline-block;
+  width: 100%;
+  padding: 12px;
+  background-color: #DBD8CD;
+  border: 1px solid #212125;
+  border-radius: 4px;
+  font-family: Arial, sans-serif;
+  font-size: 16px;
+
+}
+.input {
+  display: inline-block;
+  width: 100%;
+  padding: 12px;
+  margin-bottom: 24px;
+  background-color: #DBD8CD;
+  border: 1px solid #212125;
+  border-radius: 4px;
+  font-family: Arial, sans-serif;
+  font-size: 16px;
+}
+
+/* Título de Sección en Index */
+.titlesectionindex { 
+  width: 100%;
+  height: 200px;
+  margin-top: 50px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr;
+  gap: 8px 24px;
+  grid-auto-flow: row;
+  grid-template-areas:
+    "titleindex titleindex txtsectionindex spacetitleindex spacetitleindex spacetitleindex";
+}
+.titleindex { 
+  grid-area: titleindex;
+}
+.spacetitleindex { 
+  grid-area: spacetitleindex; 
+}
+.txtsectionindex { 
+  grid-area: txtsectionindex; 
+}
+
+/* Título de Página */
+.titlepage {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  gap: 0px 0px;
+  grid-auto-flow: row;
+  grid-template-areas:
+    "title title spacetitle spacetitle spacetitle spacetitle"
+    "spacetitle2 txttitle txttitle spacetitle3 spacetitle3 spacetitle3";
+}
+.title {
+  grid-area: title;
+}
+.spacetitle { 
+  grid-area: spacetitle; 
+}
+.spacetitle2 { 
+  grid-area: spacetitle2; 
+}
+.spacetitle3 { 
+  grid-area: spacetitle3; 
+}
+.txttitle { 
+  grid-area: txttitle; 
+}
+
+/* Estructura de textos e imágenes para páginas */
+.article1 { 
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr;
+  gap: 8px 24px;
+  grid-auto-flow: row;
+  grid-template-areas:
+    "articletxt articletxt articlespace articlecaption articleimg articleimg";
+}
+.article2 { 
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr;
+  gap: 8px 24px;
+  grid-auto-flow: row;
+  grid-template-areas:
+    "articlespace articletxt articletxt articlespace2 articlespace2 articlespace2";
+}
+.article3 { 
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr;
+  gap: 8px 24px;
+  grid-auto-flow: row;
+  grid-template-areas:
+    "articletxt articletxt articletxt2 articletxt2 articlespace articlespace";
+}
+.article4 { 
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr;
+  gap: 8px 24px;
+  grid-auto-flow: row;
+  grid-template-areas:
+    "articlecaption articlespace articlespace articlecimg articleimg articleimg";
+}
+.article5 { 
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr;
+  gap: 8px 24px;
+  grid-auto-flow: row;
+  grid-template-areas:
+    "articlecaption articleimg2 articleimg2 articleimg articleimg articleimg";
+}
+
+.articletxt { grid-area: articletxt; }
+.articletxt2 { grid-area: articletxt2; }
+.articlespace { grid-area: articlespace; }
+.articlespace2 { grid-area: articlespace2; }
+.articleimg { grid-area: articleimg; }
+.articleimg2 { grid-area: articleimg2; }
+.articlecaption { grid-area: articlecaption; }
+
+/* Sección Button grid */
+.button {
+  display: inline-block;
+  width: 100%;
+  padding: 12px;
+  margin-bottom: 50px;
+  background-color: #DBD8CD;
+  border: 1px solid #212125;
+  border-radius: 4px;
+  font-family: Arial, sans-serif;
+  font-size: 16px;
+}
+.buttongrid {
+  width: 100%;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr;
+  gap: 8px 24px;
+  grid-auto-flow: row;
+  grid-template-areas:
+    "espaciobutton espaciobutton espaciobutton espaciobutton buttonarea buttonarea";
+}
+.espaciobutton {
+  grid-area: espaciobutton;
+}
+.buttonarea {
+  grid-area: buttonarea;
+}
+
+/* Sección Shop en Index */
+.sectionshopindex {  
+  width: 100%;
+  display: grid;
+  margin-bottom: 50px;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  gap: 16px 24px;
+  grid-auto-flow: row;
+  grid-template-areas:
+    "imgshopindex imgshopindex spaceshopindex shopindex1 shopindex2 shopindex3"
+    "imgshopindex imgshopindex spaceshopindex shopindex4 shopindex5 shopindex6";
+}
+.imgshopindex {
+  grid-area: imgshopindex;
+  display: flex;
+}
+.imgshopindex img {
+  width: 400px;
+  height: 400px;
+}
+.spaceshopindex {
+  grid-area: spaceshopindex; 
+}
+.shopindex1 {
+  grid-area: shopindex1; 
+}
+.shopindex2 { 
+  grid-area: shopindex2; 
+}
+.shopindex3 { 
+  grid-area: shopindex3;
+}
+.shopindex4 {
+  grid-area: shopindex4; 
+}
+.shopindex5 {
+  grid-area: shopindex5;}
+
+.shopindex6 { 
+  grid-area: shopindex6; 
+}
+.productcard img {
+  width: 100%;
+  margin: 12px 0px 12px 0px;
+  border-radius: 4px;
+}
+
+/* Sección Blog en Index */
+.indexblog {
+  width: 100%;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr 0.1fr;
+  gap: 8px 24px;
+  grid-auto-flow: row;
+  grid-template-areas:
+    "datearticle1 imgarticle1 titlearticle1 titlearticle1 txtarticle1 txtarticle1"
+    "divisor divisor divisor divisor divisor divisor";
+}
+.titlearticle1 {
+  grid-area: titlearticle1;
+}
+.txtarticle1 {
+  grid-area: txtarticle1;
+}
+.imgarticle1 {
+  grid-area: imgarticle1;
+}
+.imgarticle1 img {
+  width: 100%;
+  height: 100%;
+  border-radius: 4px;
+}
+.divisor {
+  grid-area: divisor;
+}
+.datearticle1 {
+  grid-area: datearticle1;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: space-between;
+}
+
+/* Filtro de Productos para Tienda*/
+.productfilter {  
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+  grid-template-rows: 0.5fr;
+  gap: 8px 24px;
+  margin-bottom: 44px;
+  grid-auto-flow: row;
+  grid-template-areas:
+    "spaceproductfilter spaceproductfilter filter1 filter2 filter3 filter4";
+  border-bottom: #212125 1px solid;
+}
+
+.spaceproductfilter { grid-area: spaceproductfilter; }
+.filter1 { grid-area: filter1; }
+.filter2 { grid-area: filter2; }
+.filter3 { grid-area: filter3; }
+.filter4 { grid-area: filter4; }
+
+/* Sección Galería de Productos */
+.productgallery {  
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+  gap: 24px 24px;
+  grid-auto-flow: row;
+  grid-template-areas:
+    "product1 product2 product3 product4"
+    "product5 product6 product7 product8"
+    "product9 product10 product11 product12";
+}
+
+.product1 { grid-area: product1; }
+.product2 { grid-area: product2; }
+.product3 { grid-area: product3; }
+.product4 { grid-area: product4; }
+.product5 { grid-area: product5; }
+.product6 { grid-area: product6; }
+.product7 { grid-area: product7; }
+.product8 { grid-area: product8; }
+.product9 { grid-area: product9; }
+.product10 { grid-area: product10; }
+.product11 { grid-area: product11; }
+.product12 { grid-area: product12; }
+
+/* Product Card */
+.productcardshop {  
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 0.25fr 1fr 1fr 0.25fr;
+  gap: 8px 8px;
+  grid-auto-flow: row;
+  grid-template-areas:
+    "productname productstock"
+    "productimg productimg"
+    "productimg productimg"
+    "productcategory productprice";
+}
+
+.productname {
+  grid-area: productname;
+  display: flex;
+  align-items: last baseline;
+}
+.productstock {
+  grid-area: productstock;
+  display: flex;
+  align-items: last baseline;
+  justify-content: right;
+}
+.productimg { grid-area: productimg;}
+.productcategory { grid-area: productcategory; }
+.productprice {
+  grid-area: productprice;
+  display: flex;
+  justify-content: right; 
+}
+
+.productimg img {
+  width: 100%;
+  border-radius: 4px;
+}
+
+/* Sección Footer*/
+footer {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 200px 100px 200px 100px;
+  background-color: #212125;
+}
+footer a {
+  color: #DBD8CD;
+}
