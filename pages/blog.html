@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
     <link rel="stylesheet" href="../css/estilo.css">
     <title>CANIS Cerámica</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -11,23 +12,29 @@
 </head>
 <body>
    <header>
-      <nav>
-          <div>
-              <a href="../index.html"> <img class=logo src="../img/canisheader.svg" alt="Logo Canis"></a>
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+        <div class="container-fluid">
+          <a class="navbar-brand navlogo" href="../index.html"> <img class=logo src="../img/canisheader.svg" alt="Logo Canis"></a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="../pages/blog.html">Blog</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link active" aria-current="page" href="../pages/aboutme.html">Sobre mí</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link active" aria-current="page" href="../pages/contact.html">Contacto</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="../pages/shop.html">Tienda</a>
+                </li>
           </div>
-          <div>
-              <ul>
-                  <li> <a href="../pages/contact.html">CONTACTO</a></li>
-                  <li> <a class="strong" href="../pages/blog.html">BLOG</a></li>
-                  <li> <a href="../pages/aboutme.html">SOBRE MÍ</a></li>
-              </ul>
-          </div>
-          <div>
-              <ul>
-                  <li> <a href="../pages/shop.html">TIENDA</a></li>
-              </ul>
-          </div>
-      </nav>
+        </div>
+    </nav>
    </header>
    <main>
     <section class="titlepage">
@@ -43,25 +50,26 @@
     </section>
 
    </main>
-   <footer>
-      <div>
-          <a href="../index.html"><img src="../img/canisfooter.svg" alt="Logo Canis"></a>
-     </div>
-     <div>
-         <ul>
-             <li> <a href="../pages/shop.html">TIENDA</a></li>
-             <li> <a href="../pages/blog.html">BLOG</a></li>
-             <li> <a href="../pages/aboutme.html">SOBRE MÍ</a></li>
-         </ul>
-     </div>
-     <div>
-         <ul>
-             <li> <a href="mailto:holacanisceramica.com" target="_blank"> <img class=icon src="../img/mail.svg" alt="Enviar correo"></a></li>
-             <li> <a href="https://www.instagram.com/canis_ceramica/" target="_blank"> <img class=icon src="../img/icons8-instagram.svg"></a></li>
-             <li> <a href="https://www.facebook.com/canis_ceramica/" target="_blank"> <img class=icon src="../img/icons8-facebook.svg"></a></li>
-             <li> <a href="https://www.tiktok.com" target="_blank"> <img class=icon src="../img/icons8-tiktok.svg"></a></li>
-         </ul>
-     </div>
-   </footer>
+   <footer class="row">
+    <div class= "canisfooter col-lg-4 col-md-12 col-sm-12">
+        <a href="../index.html"> <img src="../img/canisfooter.svg" alt="Logo Canis"></a>
+   </div>
+    <div class="col-lg-4 col-md-6 col-sm-12">
+        <ul>
+            <li> <a href="../pages/shop.html">TIENDA</a></li>
+            <li> <a href="../pages/blog.html">BLOG</a></li>
+            <li> <a href="../pages/aboutme.html">SOBRE MÍ</a></li>
+        </ul>
+    </div>
+    <div class="col-lg-4 col-md-6 col-sm-12">
+        <ul>
+            <li> <a href="mailto:holacanisceramica.com" target="_blank"> <img class=icon src="../img/mail.svg" alt="Enviar correo"></a></li>
+            <li> <a href="https://www.instagram.com/canis_ceramica/" target="_blank"> <img class=icon src="../img/icons8-instagram.svg"></a></li>
+            <li> <a href="https://www.facebook.com/canis_ceramica/" target="_blank"> <img class=icon src="../img/icons8-facebook.svg"></a></li>
+            <li> <a href="https://www.tiktok.com" target="_blank"> <img class=icon src="../img/icons8-tiktok.svg"></a></li>
+        </ul>
+    </div>
+  </footer>
+   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
 </body>
 </html>

@@ -12,21 +12,27 @@
 </head>
 <body>
    <header>
-    <nav>
-        <div>
-            <a href="./index.html"> <img class=logo src="./img/canisheader.svg" alt="Logo Canis"></a>
-        </div>
-        <div>
-            <ul>
-                <li> <a href="./pages/contact.html">CONTACTO</a></li>
-                <li> <a href="./pages/blog.html">BLOG</a></li>
-                <li> <a href="./pages/aboutme.html">SOBRE MÍ</a></li>
-            </ul>
-        </div>
-        <div>
-            <ul>
-                <li> <a href="./pages/shop.html">TIENDA</a></li>
-            </ul>
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+        <div class="container-fluid">
+          <a class="navbar-brand navlogo" href="./index.html"> <img class=logo src="./img/canisheader.svg" alt="Logo Canis"></a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="./pages/blog.html">Blog</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link active" aria-current="page" href="./pages/aboutme.html">Sobre mí</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link active" aria-current="page" href="./pages/contact.html">Contacto</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="./pages/shop.html">Tienda</a>
+                </li>
+          </div>
         </div>
     </nav>
    </header>
@@ -92,7 +98,7 @@
         </div>
         <div class="spacetitleindex"></div>
         <div class="txtsectionindex">
-            <p class="caption">todas las piezas son elaboradas artesanalmente en torno alfarero.</p>
+            <p class="caption">pequeños pensamientos del quehacer cerámico.</p>
         </div>
      </section>
      <section class="indexblog">
@@ -156,18 +162,18 @@
         </div>
      </section>
    </main>
-   <footer>
-     <div>
+   <footer class="row">
+     <div class= "canisfooter col-lg-4 col-md-12 col-sm-12">
          <a href="./index.html"> <img src="./img/canisfooter.svg" alt="Logo Canis"></a>
     </div>
-     <div>
+     <div class="col-lg-4 col-md-6 col-sm-12">
          <ul>
              <li> <a href="./pages/shop.html">TIENDA</a></li>
              <li> <a href="./pages/blog.html">BLOG</a></li>
              <li> <a href="./pages/aboutme.html">SOBRE MÍ</a></li>
          </ul>
      </div>
-     <div>
+     <div class="col-lg-4 col-md-6 col-sm-12">
          <ul>
              <li> <a href="mailto:holacanisceramica.com" target="_blank"> <img class=icon src="./img/mail.svg" alt="Enviar correo"></a></li>
              <li> <a href="https://www.instagram.com/canis_ceramica/" target="_blank"> <img class=icon src="./img/icons8-instagram.svg"></a></li>

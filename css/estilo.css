@@ -57,9 +57,33 @@ a:hover {
 .strong {
   font-weight: 600;
 }
+.form-label {
+  font-family: "Work Sans", sans-serif;
+  font-weight: 400;
+  font-size: 1rem;
+  line-height: 130%;
+  text-align: left;
+}
+.form-control {
+  background-color: #DBD8CD;
+  border: 1px solid #212125;
+  border-radius: 4px;
+  font-family: Arial, sans-serif;
+  font-size: 16px;
+}
+.btn-primary {
+  background-color: #DBD8CD;
+  border-color: #212125;
+}
+.--bs-btn-color {
+  color: #212125;
+}
 .icon {
+  display: flex;
+  justify-content: center;
   width: 24px;
   height: 24px;
+  margin: 0px;
 }
 ul {
   list-style: none;
@@ -69,7 +93,7 @@ ul {
   align-items: center;
 }
 li {
-  padding: 20px;
+  padding: 16px;
 }
 hr {
   width: 100%;
@@ -86,17 +110,19 @@ header {
   width: 100%;
   z-index: 1;
 }
-nav {
-  width: 100%;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
+
+/* Navbar */
+.navbar {
+  width: 100vw;
+  background-color: #DBD8CD;
 }
+
 .logo {
   display: flex ;
   height: 24px;
   align-items: center;
 }
+
 main {
   display: flex;
   justify-content: center;
@@ -136,31 +162,7 @@ main {
   display: flex;
   flex-direction: row;
   justify-items: space-between;
-}
-.form p {
-  width: 50%;
-}
-fieldset {
-  display: inline-block;
-  width: 100%;
-  padding: 12px;
-  background-color: #DBD8CD;
-  border: 1px solid #212125;
-  border-radius: 4px;
-  font-family: Arial, sans-serif;
-  font-size: 16px;
-
-}
-.input {
-  display: inline-block;
-  width: 100%;
-  padding: 12px;
-  margin-bottom: 24px;
-  background-color: #DBD8CD;
-  border: 1px solid #212125;
-  border-radius: 4px;
-  font-family: Arial, sans-serif;
-  font-size: 16px;
+  margin-top: 50px;
 }
 
 /* Título de Sección en Index */
@@ -189,12 +191,12 @@ fieldset {
 @media screen and (max-width: 768px) {
 .titlesectionindex { 
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-columns: 1fr 1fr;
   grid-template-rows: 1fr;
   gap: 8px 24px;
   grid-auto-flow: row;
   grid-template-areas:
-    "titleindex titleindex txtsectionindex txtsectionindex";
+    "titleindex txtsectionindex";
   }
 }
 @media screen and (max-width: 480px) {
@@ -357,11 +359,10 @@ fieldset {
 @media screen and (max-width: 768px) {
   .sectionshopindex {
   grid-template-columns: 1fr 1fr 1fr 1fr;
-  grid-template-rows: 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
   grid-template-areas:
   "imgshopindex imgshopindex shopindex1 shopindex2"
   "imgshopindex imgshopindex shopindex3 shopindex4"
-  "spaceshopindex spaceshopindex shopindex5 shopindex6"
   "spaceshopindex spaceshopindex shopindex5 shopindex6";
   }
 }
@@ -387,6 +388,7 @@ fieldset {
 }
 .imgshopindex img {
   width: 100%;
+  object-fit: scale-down;
 }
 .spaceshopindex {
   grid-area: spaceshopindex; 
@@ -429,14 +431,16 @@ fieldset {
 }
 @media screen and (max-width: 768px) {
   .indexblog {
-    grid-template-columns: 1fr 1fr 1fr 1fr;
-    grid-template-rows: 1fr 0.5fr 0.1fr;
-    gap: 8px 24px;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr 0,5fr 0.1fr;
+    gap: 8px 0px;
     grid-template-areas:
-    "datearticle1 imgarticle1 titlearticle1 titlearticle1"
-    "datearticle1 imgarticle1 txtarticle1 txtarticle1"
-    "divisor divisor divisor divisor";
-  }
+     "imgarticle1"
+     "datearticle1"
+     "titlearticle1"
+     "txtarticle1"
+     "divisor";
+      }
 }
 @media screen and (max-width: 480px) {
     .indexblog {
@@ -462,7 +466,7 @@ fieldset {
 }
 .imgarticle1 img {
   width: 100%;
-  height: 100%;
+  object-fit: scale-down;
   border-radius: 4px;
 }
 .divisor {
@@ -474,6 +478,15 @@ fieldset {
   display: flex;
   flex-direction: column;
   align-items: space-between;
+}
+@media screen and (max-width: 768px) {
+  .datearticle1 {
+    grid-area: datearticle1;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }  
 }
 @media screen and (max-width: 480px) {
   .datearticle1 {
@@ -543,7 +556,6 @@ fieldset {
     "productimg productimg"
     "productcategory productprice";
 }
-
 .productname {
   grid-area: productname;
   display: flex;
@@ -572,10 +584,16 @@ fieldset {
 footer {
   display: flex;
   flex-direction: row;
+  align-items: center;
   justify-content: space-between;
-  padding: 200px 100px 200px 100px;
+  padding: 100px;
   background-color: #212125;
 }
 footer a {
   color: #DBD8CD;
+}
+footer img {
+  width: 100%;
+  text-align: center;
+  margin-bottom: 24px;
 }
