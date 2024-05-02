@@ -12,175 +12,173 @@
 </head>
 <body>
    <header>
-    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+    <nav class="navbar fixed-top navbar-expand-lg">
         <div class="container-fluid">
-          <a class="navbar-brand navlogo" href="./index.html"> <img class=logo src="./img/canisheader.svg" alt="Logo Canis"></a>
+          <a class="navbar-brand navlogo" href="./index.html"> <img src="./img/canislogoheader.svg" alt="Logo Canis"></a>
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
           </button>
           <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <ul class="navbar-nav mx-auto">
                 <li class="nav-item">
-                    <a class="nav-link active" aria-current="page" href="./pages/blog.html">Blog</a>
+                    <a class="nav-link active strong" aria-current="page" href="./index.html">Inicio</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="./pages/shop.html">Tienda</a>
                 </li>
                 <li class="nav-item">
                   <a class="nav-link active" aria-current="page" href="./pages/aboutme.html">Sobre mí</a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link active" aria-current="page" href="./pages/contact.html">Contacto</a>
+                  <a class="nav-link active" aria-current="page" href="./pages/blog.html">Blog</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link active" aria-current="page" href="./pages/shop.html">Tienda</a>
+                    <a class="nav-link active" aria-current="page" href="./pages/contact.html">Contacto</a>
                 </li>
           </div>
         </div>
     </nav>
    </header>
    <main>
-     <section class="portada">
-         <img src="./img/32_botella_B.png" alt="imagen de portada">
-         <p>Pequeñas<br>producciones<br>de utilitarios<br>en cerámica</p>
-     </section>
-     <section class="titlesectionindex">
-        <div class="titleindex">
-            <h2>↓ TIENDA</h2>
+    <section class= "portada container-fluid">
+        <div class="col-lg-8 col-md-8 col-sm-8">
+            <h2>Pequeñas producciones de utilitarios en cerámica</h2>
         </div>
-        <div class="spacetitleindex"></div>
-        <div class="txtsectionindex">
-            <p class="caption">todas las piezas son elaboradas artesanalmente en torno alfarero.</p>
+        <div class="col-lg-3 col-md-4 col-sm-6">
+            <a class="btn-primary" href="./pages/shop.html">ver productos</a>
         </div>
-     </section>
-     <section class="sectionshopindex">
-        <div class="imgshopindex">
-            <img src="./img/32_botella_B.png" alt="imagen de pieza en proceso">
+    </section>
+    <section class="indexshop container-fluid row">
+        <div class="col-xxl-3 col-xl-3 col-lg-4 col-md-4 col-sm-8 col-xs-8">
+            <h2>Tienda</h2>
+            <p>Todas las piezas son elaboradas artesanalmente a mano en torno alfarero</p>
+            <a class="btn-secondary" href="./pages/shop.html">ver productos</a>
         </div>
-        <div class="spaceshopindex"></div>
-        <div class="shopindex1 productcard">
-            <p>TAZA</p>
-            <img src="./img/Taza_Hierro_1.png" alt="imagen de producto taza">
-            <p class="caption">$500</p>
+        <div class="indexshop-gallery container row col-xxl-9 col-xl-9 col-lg-8 col-md-8 col-sm-12 col-xs-12">
+            <div class="card-product col-xxl-4 col-xl-4 col-lg-6 col-md-6 col-sm-6 col-xs-12">
+                <h4>Cuencos de té</h4>
+                <a href="./pages/product.html"><img src="/img/producto1.png" alt="cuencos de té">
+                </a>
+                <p class="price">$300</p>
+            </div>
+            <div class="card-product col-xxl-4 col-xl-4 col-lg-6 col-md-6 col-sm-6 col-xs-12">
+                <h4>Taza</h4>
+                <a href="./pages/product.html"><img src="/img/producto2.png" alt="tazas color mostaza">
+                </a>
+                <p class="price">$300</p>
+            </div>
+            <div class="card-product col-xxl-4 col-xl-4 col-lg-6 col-md-6 col-sm-6 col-xs-12">
+                <h4>Tetera</h4>
+                <a href="./pages/product.html"><img src="/img/producto3.png" alt="tetera de asa lateral">
+                </a>
+                <p class="price">$300</p>
+            </div>
+            <div class="card-product col-xxl-4 col-xl-4 col-lg-6 col-md-6 col-sm-6 col-xs-12">
+                <h4>Vasos</h4>
+                <a href="./pages/product.html"><img src="/img/producto4.png" alt="vasos blancos para café">
+                </a>
+                <p class="price">$300</p>
+            </div>
+            <div class="card-product col-xxl-4 col-xl-4 col-lg-6 col-md-6 col-sm-6 col-xs-12">
+                <h4>Vasos</h4>
+                <a href="./pages/product.html"><img src="/img/producto5.png" alt="vasos marrones para café">
+                </a>
+                <p class="price">$300</p>
+            </div>
+            <div class="card-product col-xxl-4 col-xl-4 col-lg-6 col-md-6 col-sm-6 col-xs-12">
+                <h4>Jarrón</h4>
+                <a href="./pages/product.html"><img src="/img/producto6.png" alt="jarrón de color verde">
+                </a>
+                <p class="price">$300</p>
+            </div>
         </div>
-        <div class="shopindex2 productcard">
-            <p>VASO</p>
-            <img src="./img/cuenco.png" alt="imagen de producto taza">
-            <p class="caption">$500</p>
+    </section>
+    <hr>
+    <section class="indexblog container-fluid row">
+        <div class="col-xxl-3 col-xl-3 col-lg-4 col-md-4 col-sm-8 col-xs-8">
+            <h2>Blog</h2>
         </div>
-        <div class="shopindex3 productcard">
-            <p>TETERA</p>
-            <img src="./img/tetera.png" alt="imagen de producto taza">
-            <p class="caption">$500</p>
+        <div class="card-blog container row">
+            <div class="p-3 col-xxl-1 col-xl-1 col-lg-1 col-md-12 col-sm-12 col-xs-12">
+                <p class="caption">03 | 24</p>
+                <p class="caption">NOTICIA</p>
+            </div>
+            <div class="p-3 col-xxl-6 col-xl-6 col-lg-6 col-md-12 col-sm-12 col-xs-12">
+                <a href="./pages/article.html"><img src="./img/articulo2.jpeg" alt="artículo">
+                </a>
+            </div>
+            <div class="p-3 col">
+                <div>
+                    <h4>Hacer teteras: Pasos fundamentales y consejos prácticos</h4>
+                    <p>Prepararse para hacer una tetera de cerámica es adentrarse en un mundo de creatividad y técnica. Desde el diseño inicial hasta el último toque de esmalte, cada paso en el proceso de creación es crucial para lograr una pieza funcional y estéticamente atractiva. En este pequeño texto, exploraremos los fundamentos de la fabricación de teteras en cerámica, desde la elección del barro hasta los detalles finales de acabado, junto con algunos consejos prácticos para mejorar tu técnica y conseguir resultados excepcionales.</p>
+                </div>
+                <div>
+                    <a href="./pages/blog.html">Leer más +</a>
+                </div>
+            </div>
         </div>
-        <div class="shopindex4 productcard">
-            <p>VASO</p>
-            <img src="./img/vaso.png" alt="imagen de producto taza">
-            <p class="caption">$500</p>
+        <div class="card-blog container row">
+            <div class="p-3 col-xxl-1 col-xl-1 col-lg-1 col-md-12 col-sm-12 col-xs-12">
+                <p class="caption">03 | 24</p>
+                <p class="caption">NOTICIA</p>
+            </div>
+            <div class="p-3 col-xxl-6 col-xl-6 col-lg-6 col-md-12 col-sm-12 col-xs-12">
+                <a href="./pages/article.html"><img src="./img/articulo1.jpeg" alt="artículo">
+                </a>
+            </div>
+            <div class="p-3 col">
+                <div>
+                    <h4>Herramientas: hacia lo indispensable</h4>
+                    <p>En el taller de un ceramista, las herramientas son extensiones de su creatividad y habilidad. Cada pieza de equipo, desde los simples rodillos de arcilla hasta los complicados tornos eléctricos, cumple un papel fundamental en el proceso de creación. Exploraremos algunas de las herramientas más esenciales para ceramistas, desde las básicas hasta las especializadas, y cómo cada una contribuye a dar vida a las visiones de los artistas del barro.</p>
+                </div>
+                <div>
+                    <a href="./pages/blog.html">Leer más +</a>
+                </div>
+            </div>
         </div>
-        <div class="shopindex5 productcard">
-            <p>TAZA</p>
-            <img src="./img/Taza_Hierro_1.png" alt="imagen de producto taza">
-            <p class="caption">$500</p>
+        <div class="card-blog container row">
+            <div class="p-3 col-xxl-1 col-xl-1 col-lg-1 col-md-12 col-sm-12 col-xs-12">
+                <p class="caption">03 | 24</p>
+                <p class="caption">NOTICIA</p>
+            </div>
+            <div class="p-3 col-xxl-6 col-xl-6 col-lg-6 col-md-12 col-sm-12 col-xs-12">
+                <a href="./pages/article.html"><img src="./img/articulo3.jpg" alt="artículo">
+                </a>
+            </div>
+            <div class="p-3 col">
+                <div>
+                    <h4>Horno a leña: algunos pensamientos</h4>
+                    <p>En el mundo moderno de la cerámica, donde los hornos eléctricos y a gas dominan los talleres, el horno a leña sigue siendo una joya rara y preciada. Más que una simple herramienta de cocción, el horno a leña es un símbolo de tradición y conexión con la naturaleza en el arte cerámico. En esta entrada del blog, exploraremos la fascinante historia y el proceso técnico detrás del uso del horno a leña en la cerámica, así como su encanto único y los desafíos que presenta para los ceramistas contemporáneos.</p>
+                </div>
+                <div>
+                    <a href="./pages/blog.html">Leer más +</a>
+                </div>
+            </div>
         </div>
-        <div class="shopindex6 productcard">
-            <p>TAZA</p>
-            <img src="./img/Taza_Hierro_1.png" alt="imagen de producto taza">
-            <p class="caption">$500</p>    
-        </div>
-     </section> 
-     <section class="buttongrid">
-        <div class="espaciobutton"></div>
-        <div class="buttonarea">
-             <a href="./pages/shop.html"><button class="button" type="button">Ver más</button></a>
-        </div>
-     </section>    
-     <section class="titlesectionindex">
-        <div class="titleindex">
-            <h2>↓ BLOG</h2>
-        </div>
-        <div class="spacetitleindex"></div>
-        <div class="txtsectionindex">
-            <p class="caption">pequeños pensamientos del quehacer cerámico.</p>
-        </div>
-     </section>
-     <section class="indexblog">
-        <div class="datearticle1">
-            <p class="caption">03 | 24</p>
-            <p class="caption">manual</p>
-        </div>
-        <div class="imgarticle1">
-            <img src="./img/32_botella_B.png" alt="imagen de artículo">
-        </div>
-        <div class="titlearticle1">
-            <h3>Título del artículo</h3>
-        </div>
-        <div class="txtarticle1">
-            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quas, similique. Odio ullam qui temporibus dolorem quidem velit quod rerum mollitia?</p>
-        </div>
-        <div class="divisor">
-            <hr>
-        </div>
-     </section>
-     <section class="indexblog">
-        <div class="datearticle1">
-            <p class="caption">03 | 24</p>
-            <p class="caption">manual</p>
-        </div>
-        <div class="imgarticle1">
-            <img src="./img/32_botella_B.png" alt="imagen de artículo">
-        </div>
-        <div class="titlearticle1">
-            <h3>Título del artículo</h3>
-        </div>
-        <div class="txtarticle1">
-            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quas, similique. Odio ullam qui temporibus dolorem quidem velit quod rerum mollitia?</p>
-        </div>
-        <div class="divisor">
-            <hr>
-        </div>
-     </section>
-     <section class="indexblog">
-        <div class="datearticle1">
-            <p class="caption">03 | 24</p>
-            <p class="caption">manual</p>
-        </div>
-        <div class="imgarticle1">
-            <img src="./img/32_botella_B.png" alt="imagen de artículo">
-        </div>
-        <div class="titlearticle1">
-            <h3>Título del artículo</h3>
-        </div>
-        <div class="txtarticle1">
-            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quas, similique. Odio ullam qui temporibus dolorem quidem velit quod rerum mollitia?</p>
-        </div>
-        <div class="divisor">
-            <hr>
-        </div>
-     </section>
-     <section class="buttongrid">
-        <div class="espaciobutton"></div>
-        <div class="buttonarea">
-             <a href="./pages/blog.html"><button class="button" type="button">Ver más</button></a>
-        </div>
-     </section>
+    </section>
    </main>
-   <footer class="row">
-     <div class= "canisfooter col-lg-4 col-md-12 col-sm-12">
-         <a href="./index.html"> <img src="./img/canisfooter.svg" alt="Logo Canis"></a>
-    </div>
-     <div class="col-lg-4 col-md-6 col-sm-12">
-         <ul>
-             <li> <a href="./pages/shop.html">TIENDA</a></li>
-             <li> <a href="./pages/blog.html">BLOG</a></li>
-             <li> <a href="./pages/aboutme.html">SOBRE MÍ</a></li>
-         </ul>
-     </div>
-     <div class="col-lg-4 col-md-6 col-sm-12">
-         <ul>
-             <li> <a href="mailto:holacanisceramica.com" target="_blank"> <img class=icon src="./img/mail.svg" alt="Enviar correo"></a></li>
-             <li> <a href="https://www.instagram.com/canis_ceramica/" target="_blank"> <img class=icon src="./img/icons8-instagram.svg"></a></li>
-             <li> <a href="https://www.facebook.com/canis_ceramica/" target="_blank"> <img class=icon src="./img/icons8-facebook.svg"></a></li>
-             <li> <a href="https://www.tiktok.com" target="_blank"> <img class=icon src="./img/icons8-tiktok.svg"></a></li>
-         </ul>
-     </div>
+   <footer class="container-fluid row">
+        <div class="col-xxl-4 col-xl-4 col-lg-4 col-md-4 col-sm-4 col-xs-4">
+            <div>
+                <a href="./index.html"> <img class="canisfooter" src="/img/canislogofooter.svg" alt="Logo Canis"></a>
+            </div>
+        </div>
+        <div class="col-xxl-4 col-xl-6 col-lg-6 col-md-12 col-sm-12 col-xs-12">
+            <ul>
+                <li> <a href="./pages/shop.html">TIENDA</a></li>
+                <li> <a href="./pages/aboutme.html">SOBRE MÍ</a></li>
+                <li> <a href="./pages/blog.html">BLOG</a></li>
+                <li> <a href="./pages/contact.html">CONTACTO</a></li>
+            </ul>
+        </div>
+        <div class="col-xxl-4 col-xl-6 col-lg-6 col-md-12 col-sm-12 col-xs-12">
+            <ul>
+                <li> <a href="mailto:holacanisceramica.com" target="_blank"> <img class="icon" src="./img/mail.svg" alt="Enviar correo"></a></li>
+                <li> <a href="https://www.instagram.com/canis_ceramica/" target="_blank"> <img class="icon" src="/img/logo-instagram.svg"></a></li>
+                <li> <a href="https://www.facebook.com/canis_ceramica/" target="_blank"> <img class="icon" src="./img/logo-facebook.svg"></a></li>
+                <li> <a href="https://www.tiktok.com" target="_blank"> <img class="icon" src="./img/logo-tiktok.svg"></a></li>
+            </ul>
+        </div>
    </footer>
    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
 </body>

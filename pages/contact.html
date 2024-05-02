@@ -12,39 +12,40 @@
 </head>
 <body>
    <header>
-    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+    <nav class="navbar fixed-top navbar-expand-lg">
         <div class="container-fluid">
-          <a class="navbar-brand navlogo" href="../index.html"> <img class=logo src="../img/canisheader.svg" alt="Logo Canis"></a>
+          <a class="navbar-brand navlogo" href="../index.html"> <img src="../img/canislogoheader.svg" alt="Logo Canis"></a>
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
           </button>
           <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <ul class="navbar-nav mx-auto">
                 <li class="nav-item">
-                    <a class="nav-link active" aria-current="page" href="../pages/blog.html">Blog</a>
+                    <a class="nav-link active" aria-current="page" href="../index.html">Inicio</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="../pages/shop.html">Tienda</a>
                 </li>
                 <li class="nav-item">
                   <a class="nav-link active" aria-current="page" href="../pages/aboutme.html">Sobre mí</a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link active" aria-current="page" href="../pages/contact.html">Contacto</a>
+                  <a class="nav-link active" aria-current="page" href="../pages/blog.html">Blog</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link active" aria-current="page" href="../pages/shop.html">Tienda</a>
+                    <a class="nav-link active strong" aria-current="page" href="../pages/contact.html">Contacto</a>
                 </li>
           </div>
         </div>
     </nav>
    </header>
    <main>
-    <section">
-       <div class="col-lg-12 col-md-12 col-sm-12">
-         <h1>Contacto</h1>
-       </div>
+    <section class="title-page">
+           <h1>Contacto</h1>
     </section>
-     <section class="form row">
+     <section class="form container-fluid row">
         <div class="col-lg-4 col-md-6 col-sm-12">
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur odio dignissimos saepe alias veritatis magni repellendus quidem corporis sapiente distinctio, quis quaerat pariatur dolorum laborum quos vel. Provident, ab facere!</p>
+            <p>¿Quieres contactarte conmigo? Puedes hacerlo a través de este formulario web.</p>
         </div>
         <div class="col-lg-8 col-md-12 col-sm-12"> 
           <div class="mb-3">
@@ -64,31 +65,34 @@
             <textarea class="form-control" id="message" rows="3" placeholder="Escribe aquí tu mensaje"></textarea>
           </div>
           <div>
-            <button type="button" class="btn btn-primary">Enviar</button>
+            <a class="btn-secondary" href="">Enviar</a>
           </div>
         </div>
      </section>
    </main>
-   <footer class="row">
-    <div class= "canisfooter col-lg-4 col-md-12 col-sm-12">
-        <a href="../index.html"> <img src="../img/canisfooter.svg" alt="Logo Canis"></a>
-   </div>
-    <div class="col-lg-4 col-md-6 col-sm-12">
+   <footer class="container-fluid row">
+    <div class="col-xxl-4 col-xl-4 col-lg-4 col-md-4 col-sm-4 col-xs-4">
+        <div>
+            <a href="../index.html"> <img class="canisfooter" src="../img/canislogofooter.svg" alt="Logo Canis"></a>
+        </div>
+    </div>
+    <div class="col-xxl-4 col-xl-6 col-lg-6 col-md-12 col-sm-12 col-xs-12">
         <ul>
             <li> <a href="../pages/shop.html">TIENDA</a></li>
-            <li> <a href="../pages/blog.html">BLOG</a></li>
             <li> <a href="../pages/aboutme.html">SOBRE MÍ</a></li>
+            <li> <a href="../pages/blog.html">BLOG</a></li>
+            <li> <a href="../pages/contact.html">CONTACTO</a></li>
         </ul>
     </div>
-    <div class="col-lg-4 col-md-6 col-sm-12">
+    <div class="col-xxl-4 col-xl-6 col-lg-6 col-md-12 col-sm-12 col-xs-12">
         <ul>
-            <li> <a href="mailto:holacanisceramica.com" target="_blank"> <img class=icon src="../img/mail.svg" alt="Enviar correo"></a></li>
-            <li> <a href="https://www.instagram.com/canis_ceramica/" target="_blank"> <img class=icon src="../img/icons8-instagram.svg"></a></li>
-            <li> <a href="https://www.facebook.com/canis_ceramica/" target="_blank"> <img class=icon src="../img/icons8-facebook.svg"></a></li>
-            <li> <a href="https://www.tiktok.com" target="_blank"> <img class=icon src="../img/icons8-tiktok.svg"></a></li>
+            <li> <a href="mailto:holacanisceramica.com" target="_blank"> <img class="icon" src="../img/mail.svg" alt="Enviar correo"></a></li>
+            <li> <a href="https://www.instagram.com/canis_ceramica/" target="_blank"> <img class="icon" src="../img/logo-instagram.svg"></a></li>
+            <li> <a href="https://www.facebook.com/canis_ceramica/" target="_blank"> <img class="icon" src="../img/logo-facebook.svg"></a></li>
+            <li> <a href="https://www.tiktok.com" target="_blank"> <img class="icon" src="../img/logo-tiktok.svg"></a></li>
         </ul>
     </div>
-  </footer>
+</footer>
    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
 </body>
 </html>
