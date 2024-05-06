@@ -1,0 +1,114 @@
+/*MAIN*/
+
+main {
+    .portada {
+      @include flex-center;
+      flex-direction: column;
+      width: 100vw;
+      height: 100vh;
+      background-image: url("../img/textura.png");
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-position: center;
+      h2 {
+        text-align: center;
+        @include padding-section;
+      }
+    }
+    .indexshop {
+      display: flex;
+      justify-content: center;
+      margin-top: $margin-lg;
+      margin-bottom: $margin-lg;
+      @include padding-section;
+      .indexshop-gallery {
+        display: flex;
+        justify-content: space-between;
+        .card-product {
+          display: flex;
+          flex-direction: column;
+          padding: $padding-md;
+          border-radius: 4px;
+          &:hover {
+            @include transition-hover;
+          }
+          a {
+            img {
+              width: 100%;
+              border-style: solid;
+              border-radius: 4px;
+              border-color: $black;
+              border-width: 1px;
+            }
+          }
+          .price {
+            text-align: right;
+            background-color: $black;
+            color: $lightbeige;
+            padding: $padding-sm;
+            margin-top: $margin-sm;
+            border-radius: 4px;
+          }
+        }
+      }
+    }
+    .indexblog {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      margin-top: $margin-lg;
+      margin-bottom: $margin-lg;
+      @include padding-section;
+      .card-blog {
+        display: flex;
+        margin: 0%;
+        margin-bottom: $margin-md;
+        background-color: $lightbeige;
+        border-style: solid;
+        border-radius: 4px;
+        border-color: $black;
+        border-width: 1px;
+        &:hover {
+          @include transition-hover;
+        }
+      }
+      a {
+        img {
+          width: 100%;
+          border-style: solid;
+          border-radius: 4px;
+          border-color: $black;
+          border-width: 1px;
+        }
+      }
+    }
+  }
+
+/*TITLE PAGE*/
+
+.title-page {
+  display: flex;
+  justify-content: left;
+  align-items: center;
+  height: 400px;
+  margin-top: $margin-xl;
+  @include padding-section;
+}
+
+/*FORM*/
+
+.form {
+display: flex;
+justify-content: left;
+@include padding-section;
+margin-bottom: $margin-xl;
+}
+
+/*ARTICLE*/
+
+.article {
+  @include flex-center;
+  flex-direction: column;
+  @include padding-section;
+  margin-bottom: $margin-xl;
+}

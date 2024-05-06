@@ -1,0 +1,61 @@
+/*TYPOGRAPHY*/
+
+.caption {
+    font-family: "Work Sans", sans-serif;
+    font-weight: 400;
+    font-size: 0.667rem;
+    line-height: 120%;
+    font-variant: small-caps;
+    color: $black;
+    text-align: left;
+  }
+p {
+  font-family: "Work Sans", sans-serif;
+  font-weight: 400;
+  font-size: 1rem;
+  line-height: 130%;
+  color: $black;
+  text-align: left;
+}
+h4 {
+  font-family: "Work Sans", sans-serif;
+  font-weight: 500;
+  font-size: 1.25rem;
+  line-height: 120%;
+}
+h3 {
+  font-family: "Work Sans", sans-serif;
+  font-weight: 400;
+  font-size: 3.375rem;
+  line-height: 120%;
+}
+h2 {
+  font-family: "Work Sans", sans-serif;
+  font-weight: 300;
+  font-size: 4rem;
+  line-height: 110%;
+  color: $black;
+  padding-bottom: 2rem;
+}
+h1 {
+  font-family: "Work Sans", sans-serif;
+  font-weight: 200;
+  font-size: 6rem;
+  line-height: 120%;
+  color: $black;
+  padding-bottom: 3rem;
+}
+a {
+  font-family: "Work Sans", sans-serif;
+  font-weight: 400;
+  font-size: 1rem;
+  line-height: 120%;
+  color: $black;
+  text-decoration: none;
+  &:hover {
+    text-decoration: underline;
+  }
+}
+.strong {
+  font-weight: 800;
+}

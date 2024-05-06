@@ -1,0 +1,57 @@
+/*COLORS*/
+
+$black: #212125;
+$beige: #DBD8CD;
+$lightbeige: #E5E3DB;
+$success: #198754;
+$info: #6F42C1;
+$warning: #FFC107;
+$danger: #DC3545;
+$white: #f2f2f2;
+
+/*MARGIN*/
+
+$margin-sm: 0.5rem;
+$margin-md: 1.5rem;
+$margin-lg: 3.0rem;
+$margin-xl: 4.5rem;
+
+
+/*PADDING*/
+
+$padding-sm: 0.5rem;
+$padding-md: 1.5rem;
+$padding-lg: 3.0rem;
+$padding-xl: 4.5rem;
+
+/*ALINEACIÓN*/
+
+@mixin flex-center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@mixin padding-section {
+    padding-left: 5%;
+    padding-right: 5%;
+}
+
+/*TRANSFORMS, TRANSITIONS AND ANIMATIONS*/
+
+@mixin transition-hover {
+    transform: translate(3px, -3px);
+    transition: 0.10s;
+    transition-timing-function: ease-in-out;
+    box-shadow: -5px 5px 15px #2121256a;
+}
+
+.fade-in {
+    animation: fade-in;
+    animation-duration: 1s;
+}
+
+@keyframes fade-in {
+    0% { opacity: 0; }
+    100% { opacity: 1; }
+}

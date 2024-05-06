@@ -1,0 +1,37 @@
+/*BUTTONS*/
+
+.btn-primary {
+  @include flex-center;
+  width: 100%;
+  background-color: $lightbeige;
+  color: $black;
+  border-color: $black;
+  border-radius: 100px;
+  border-width: 2px;
+  border-style: solid;
+  padding: $padding-sm;
+  text-align: center;
+  font-size: 1.2rem;
+  font-weight: 500;
+  text-decoration: none;
+  margin-bottom: $margin-lg;
+  &:hover {
+    background-color: $black;
+    color: $beige;
+    @include transition-hover;
+  }
+}
+  
+.btn-secondary {
+  @extend .btn-primary;
+  border-radius: 4px;
+  border-width: 1px;
+  margin-top: auto;
+}
+
+/*CAROUSEL*/
+
+.carousel {
+  margin-top: $margin-xl;
+  margin-bottom: $margin-xl;
+}

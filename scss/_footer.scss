@@ -1,0 +1,30 @@
+/*FOOTER*/
+
+footer {
+  @include flex-center;
+  flex-direction: column;
+  height: 500px;
+  width: 100vw;
+  margin-top: $margin-lg;
+  padding-top: 100px;
+  @include padding-section;
+  background-color: $black;
+  .canisfooter {
+    width: 100%;
+    @include flex-center;
+  }
+  ul {
+    @include flex-center;
+    list-style: none;
+    width: 100%;
+    li {
+      padding: $padding-md;
+      a {
+        color: $beige;
+        img {
+          width: 24px;
+        }
+      }
+    }
+  }
+}
