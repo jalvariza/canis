@@ -82,6 +82,37 @@ main {
         }
       }
     }
+    .product-details {
+      display: flex;
+      justify-content: center;
+      @include padding-section;
+      gap: 2rem;
+      margin-top: 10vw;
+      margin-bottom: $margin-lg;
+      .product-details-img {
+        img {
+          @include flex-center;
+          border-style: solid;
+          border-radius: 4px;
+          border-color: $black;
+          border-width: 1px;
+          margin: 0%;
+          padding: 0%;
+          margin: $margin-sm;
+          &:hover {
+            @include transition-hover;
+          }
+        }        
+      }
+      .product-details-info {
+        display: flex;
+        flex-direction: column;
+        align-items: start;
+        .btn-secondary {
+          margin-top: $margin-md;
+        }
+      }
+    }
   }
 
 /*TITLE PAGE*/
