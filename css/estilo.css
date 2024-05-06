@@ -1,11 +1,23 @@
-* {
-  padding: 0;
-  margin: 0;
-  box-sizing: border-box;
+@charset "UTF-8";
+/*COLORS*/
+/*MARGIN*/
+/*PADDING*/
+/*ALINEACIÓN*/
+/*TRANSFORMS, TRANSITIONS AND ANIMATIONS*/
+.fade-in {
+  animation: fade-in;
+  animation-duration: 1s;
 }
 
-/*COLORS*/
-/*THYPOGRAPHY*/
+@keyframes fade-in {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+/*TYPOGRAPHY*/
 .caption {
   font-family: "Work Sans", sans-serif;
   font-weight: 400;
@@ -65,7 +77,6 @@ a {
   color: #212125;
   text-decoration: none;
 }
-
 a:hover {
   text-decoration: underline;
 }
@@ -74,79 +85,74 @@ a:hover {
   font-weight: 800;
 }
 
-/*MARGIN*/
-/*PADDING*/
-/*BUTTON*/
-.btn-primary {
+/*BUTTONS*/
+.btn-primary, .btn-secondary {
   display: flex;
-  align-items: center;
   justify-content: center;
+  align-items: center;
   width: 100%;
-  background-color: rgba(219, 216, 205, 0.8117647059);
+  background-color: #E5E3DB;
   color: #212125;
   border-color: #212125;
   border-radius: 100px;
-  border-width: 1px;
+  border-width: 2px;
   border-style: solid;
-  padding: 0.75rem;
+  padding: 0.5rem;
   text-align: center;
-  font-size: 20px;
+  font-size: 1.2rem;
   font-weight: 500;
   text-decoration: none;
   margin-bottom: 3rem;
 }
-
-.btn-primary:hover {
+.btn-primary:hover, .btn-secondary:hover {
   background-color: #212125;
   color: #DBD8CD;
+  transform: translate(3px, -3px);
+  transition: 0.1s;
+  transition-timing-function: ease-in-out;
+  box-shadow: -5px 5px 15px rgba(33, 33, 37, 0.4156862745);
 }
 
 .btn-secondary {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  width: 100%;
-  background-color: rgba(219, 216, 205, 0.8117647059);
-  color: #212125;
-  border-color: #212125;
   border-radius: 4px;
   border-width: 1px;
-  border-style: solid;
-  padding: 0.75rem;
-  text-align: center;
-  font-size: 20px;
-  font-weight: 500;
-  text-decoration: none;
   margin-top: auto;
 }
 
-.btn-secondary:hover {
-  background-color: #212125;
-  color: #DBD8CD;
+/*CAROUSEL*/
+.carousel {
+  margin-top: 4.5rem;
+  margin-bottom: 4.5rem;
 }
 
 /*BODY*/
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
 body {
   background-color: #DBD8CD;
 }
 
-/*NAVBAR*/
-.navbar {
+/*HEADER*/
+header nav {
   background-color: #DBD8CD;
-  padding-left: 5%;
-  padding-right: 5%;
 }
-
-.navbar-brand img {
+header nav a img {
   height: 2rem;
 }
+header nav .navlogo {
+  padding-left: 5%;
+}
 
-/*PORTADA*/
-.portada {
+/*MAIN*/
+main .portada {
   display: flex;
-  flex-direction: column;
   justify-content: center;
   align-items: center;
+  flex-direction: column;
   width: 100vw;
   height: 100vh;
   background-image: url("../img/textura.png");
@@ -154,55 +160,51 @@ body {
   background-size: cover;
   background-position: center;
 }
-
-.portada h2 {
+main .portada h2 {
   text-align: center;
   padding-left: 5%;
   padding-right: 5%;
 }
-
-/*INDEXSHOP*/
-.indexshop {
+main .indexshop {
   display: flex;
-  flex-direction: row;
-  justify-content: space-between;
+  justify-content: center;
   margin-top: 3rem;
   margin-bottom: 3rem;
   padding-left: 5%;
   padding-right: 5%;
 }
-
-.indexshop-gallery {
+main .indexshop .indexshop-gallery {
   display: flex;
   justify-content: space-between;
-  flex-direction: row;
 }
-
-.card-product {
+main .indexshop .indexshop-gallery .card-product {
   display: flex;
   flex-direction: column;
-  padding: 0.5rem;
+  padding: 1.5rem;
+  border-radius: 4px;
 }
-
-.card-product a img {
+main .indexshop .indexshop-gallery .card-product:hover {
+  transform: translate(3px, -3px);
+  transition: 0.1s;
+  transition-timing-function: ease-in-out;
+  box-shadow: -5px 5px 15px rgba(33, 33, 37, 0.4156862745);
+}
+main .indexshop .indexshop-gallery .card-product a img {
   width: 100%;
   border-style: solid;
   border-radius: 4px;
   border-color: #212125;
   border-width: 1px;
 }
-
-.price {
+main .indexshop .indexshop-gallery .card-product .price {
   text-align: right;
   background-color: #212125;
   color: #E5E3DB;
-  padding: 0.75rem;
+  padding: 0.5rem;
   margin-top: 0.5rem;
   border-radius: 4px;
 }
-
-/*INDEXBLOG*/
-.indexblog {
+main .indexblog {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -211,19 +213,23 @@ body {
   padding-left: 5%;
   padding-right: 5%;
 }
-
-.card-blog {
+main .indexblog .card-blog {
   display: flex;
-  flex-direction: row;
-  margin-bottom: 1rem;
+  margin: 0%;
+  margin-bottom: 1.5rem;
   background-color: #E5E3DB;
   border-style: solid;
   border-radius: 4px;
   border-color: #212125;
   border-width: 1px;
 }
-
-.card-blog a img {
+main .indexblog .card-blog:hover {
+  transform: translate(3px, -3px);
+  transition: 0.1s;
+  transition-timing-function: ease-in-out;
+  box-shadow: -5px 5px 15px rgba(33, 33, 37, 0.4156862745);
+}
+main .indexblog a img {
   width: 100%;
   border-style: solid;
   border-radius: 4px;
@@ -234,11 +240,10 @@ body {
 /*TITLE PAGE*/
 .title-page {
   display: flex;
-  flex-direction: row;
   justify-content: left;
   align-items: center;
   height: 400px;
-  margin-top: 4rem;
+  margin-top: 4.5rem;
   padding-left: 5%;
   padding-right: 5%;
 }
@@ -246,70 +251,58 @@ body {
 /*FORM*/
 .form {
   display: flex;
-  flex-direction: row;
   justify-content: left;
   padding-left: 5%;
   padding-right: 5%;
-  margin-bottom: 4rem;
+  margin-bottom: 4.5rem;
 }
 
 /*ARTICLE*/
 .article {
   display: flex;
-  flex-direction: column;
   justify-content: center;
   align-items: center;
+  flex-direction: column;
   padding-left: 5%;
   padding-right: 5%;
-  margin-bottom: 4rem;
-}
-
-.carousel {
-  margin-top: 5rem;
-  margin-bottom: 5rem;
+  margin-bottom: 4.5rem;
 }
 
 /*FOOTER*/
 footer {
   display: flex;
-  flex-direction: row;
   justify-content: center;
   align-items: center;
-  height: 400px;
+  flex-direction: column;
+  height: 500px;
   width: 100vw;
   margin-top: 3rem;
+  padding-top: 100px;
   padding-left: 5%;
   padding-right: 5%;
   background-color: #212125;
 }
-
-.icon {
+footer .canisfooter {
+  width: 100%;
   display: flex;
-  justify-content: center;
-  width: 24px;
-  height: 24px;
-  margin: 0px;
-}
-
-ul {
-  list-style: none;
-  display: flex;
-  flex-direction: row;
   justify-content: center;
   align-items: center;
 }
-
-li {
-  padding: 16px;
+footer ul {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  list-style: none;
+  width: 100%;
 }
-
-li a {
+footer ul li {
+  padding: 1.5rem;
+}
+footer ul li a {
   color: #DBD8CD;
 }
-
-.canisfooter {
-  width: 100%;
-  text-align: center;
+footer ul li a img {
+  width: 24px;
 }
 
 /*# sourceMappingURL=estilo.css.map */
