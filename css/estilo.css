@@ -21,7 +21,7 @@
 .caption {
   font-family: "Work Sans", sans-serif;
   font-weight: 400;
-  font-size: 0.667rem;
+  font-size: 0.85rem;
   line-height: 120%;
   font-variant: small-caps;
   color: #212125;
@@ -235,6 +235,41 @@ main .indexblog a img {
   border-radius: 4px;
   border-color: #212125;
   border-width: 1px;
+}
+main .product-details {
+  display: flex;
+  justify-content: center;
+  padding-left: 5%;
+  padding-right: 5%;
+  gap: 2rem;
+  margin-top: 10vw;
+  margin-bottom: 3rem;
+}
+main .product-details .product-details-img img {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-style: solid;
+  border-radius: 4px;
+  border-color: #212125;
+  border-width: 1px;
+  margin: 0%;
+  padding: 0%;
+  margin: 0.5rem;
+}
+main .product-details .product-details-img img:hover {
+  transform: translate(3px, -3px);
+  transition: 0.1s;
+  transition-timing-function: ease-in-out;
+  box-shadow: -5px 5px 15px rgba(33, 33, 37, 0.4156862745);
+}
+main .product-details .product-details-info {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+}
+main .product-details .product-details-info .btn-secondary {
+  margin-top: 1.5rem;
 }
 
 /*TITLE PAGE*/
