@@ -2,12 +2,12 @@
 
 footer {
   @include flex-center;
-  flex-direction: column;
-  height: 500px;
-  width: 100vw;
+  @include padding-section;
+  height: auto;
   margin-top: $margin-lg;
   padding-top: 100px;
-  @include padding-section;
+  padding-bottom: 100px;
+  row-gap: 2rem;
   background-color: $black;
   .canisfooter {
     width: 100%;
@@ -15,10 +15,14 @@ footer {
   }
   ul {
     @include flex-center;
+    @include padding-section;
+    flex-wrap: wrap;
     list-style: none;
-    width: 100%;
+    margin-bottom: 0%;
     li {
-      padding: $padding-md;
+      @include flex-center;
+      margin: auto;
+      padding: auto;
       a {
         color: $beige;
         img {
@@ -27,4 +31,8 @@ footer {
       }
     }
   }
+}
+
+.container-fluid {
+  margin: 0px;
 }
