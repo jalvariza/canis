@@ -11,6 +11,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="icon" href="../img/favicon.png" type="image/x-icon">
 </head>
 <body>
    <header>
@@ -21,7 +22,7 @@
             <span class="navbar-toggler-icon"></span>
           </button>
           <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav mx-auto">
+            <ul class="navbar-nav ms-auto">
                 <li class="nav-item">
                     <a class="nav-link active" aria-current="page" href="../index.html">Inicio</a>
                 </li>
@@ -43,34 +44,55 @@
    </header>
    <main>
     <section class="product-details container-fluid row">
-        <div class="product-details-img container-fluid row col-xxl-6 col-xl-6 col-lg-6 col-md-6 col-sm-12 col-xs-12">
+        <div class="product-details-img container-fluid row col-xxl-5 col-xl-5 col-lg-5 col-md-5 col-sm-12 col-xs-12">
             <img class="col-12" src="../img/productdetail1.png" alt="Imagen principal del producto">
-            <img class="col-3" src="../img/productdetail2.png" alt="Imagen secundaria del producto">
-            <img class="col-3" src="../img/productdetail3.png" alt="Imagen secundaria del producto">
-            <img class="col-3" src="../img/productdetail4.png" alt="Imagen secundaria del producto">
+            <img class="col-2" src="../img/productdetail2.png" alt="Imagen secundaria del producto">
+            <img class="col-2" src="../img/productdetail3.png" alt="Imagen secundaria del producto">
+            <img class="col-2" src="../img/productdetail4.png" alt="Imagen secundaria del producto">
         </div>
-        <div class="product-details-info container-fluid row col-xxl-4 col-xl-4 col-lg-4 col-md-4 col-sm-12 col-xs-12">
+        <div class="container-fluid row col-xxl-5 col-xl-5 col-lg-5 col-md-5 col-sm-12 col-xs-12">
             <h3>Vasos para Café</h3>
+            <p>Vasos para café horneados en horno eléctrico. Esmalte interior transparente y exterior coloreado con óxido de hierro.</p>
             <hr>
-            <p class="caption">diámetro:</p>
-            <p>10cm</p>
-            <p class="caption">altura:</p>
-            <p>16cm</p>
-            <p class="caption">peso:</p>
-            <p>650g</p>
+            <div class="product-details-info container-fluid">
+                <div>
+                    <p class="caption">diámetro:</p>
+                    <p>9cm</p>
+                </div>
+                <div>
+                    <p class="caption">altura:</p>
+                    <p>8,5cm</p>
+                </div>
+                <div>
+                    <p class="caption">peso:</p>
+                    <p>150g</p>
+                </div>
+            </div>
             <hr>
-            <a class="btn-secondary" href="#">Comprar</a>
+            <p>Stock disponible: 12 unidades</p>
+            <hr>
+            <div>
+                <div class="container-fluid product-compra">
+                    <div>
+                        <label for="cantidad">Cantidad:</label>
+                        <input type="number" id="cantidad" name="cantidad" min="1" max="12" value="1">
+                    </div>
+                    <div><h4 class="price">$300</h4></div>
+                </div>
+                <div>
+                    <a class="btn-secondary" href="#">Añadir al carrito</a>
+                </div>
+            </div>
         </div>
     </section>
-
    </main>
    <footer class="container-fluid row">
-    <div class="col-xxl-4 col-xl-4 col-lg-4 col-md-4 col-sm-4 col-xs-4">
+    <div class="col-xxl-2 col-xl-2 col-lg-2 col-md-4 col-sm-4 col-xs-4">
         <div>
             <a href="../index.html"> <img class="canisfooter" src="../img/canislogofooter.svg" alt="Logo Canis"></a>
         </div>
     </div>
-    <div class="col-xxl-4 col-xl-6 col-lg-6 col-md-12 col-sm-12 col-xs-12">
+    <div class="container-fluid row col-xxl-6 col-xl-6 col-lg-6 col-md-10 col-sm-10 col-xs-10">
         <ul>
             <li> <a href="../pages/shop.html">TIENDA</a></li>
             <li> <a href="../pages/aboutme.html">SOBRE MÍ</a></li>
@@ -78,7 +100,7 @@
             <li> <a href="../pages/contact.html">CONTACTO</a></li>
         </ul>
     </div>
-    <div class="col-xxl-4 col-xl-6 col-lg-6 col-md-12 col-sm-12 col-xs-12">
+    <div class="container-fluid row col-xxl-3 col-xl-3 col-lg-3 col-md-4 col-sm-4 col-xs-4">
         <ul>
             <li> <a href="mailto:holacanisceramica.com" target="_blank"> <img class="icon" src="../img/mail.svg" alt="Enviar correo"></a></li>
             <li> <a href="https://www.instagram.com/canis_ceramica/" target="_blank"> <img class="icon" src="../img/logo-instagram.svg"></a></li>
