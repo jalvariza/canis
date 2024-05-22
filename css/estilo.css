@@ -283,10 +283,12 @@ main .product-details .product-compra {
   display: flex;
   justify-content: left;
   align-items: center;
-  height: 400px;
+  height: auto;
   margin-top: 4.5rem;
   padding-left: 5%;
   padding-right: 5%;
+  padding-top: 3rem;
+  padding-bottom: 3rem;
 }
 
 /*FORM*/
